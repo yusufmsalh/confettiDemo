@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <button id="startConfetti"></button>
+        <button id="stopConfetti"></button>
+      </div>
+
+      <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="jquery.confetti.js"></script>
+
+
+       <script>
+    
+    $( document ).ready(function() {
+        $('#startConfetti').hide();
+        $('#stopConfetti').hide();
+        $('#startConfetti').click();
+        setTimeout(function(){$('#stopConfetti').click();}, 3000);
+
+    })
+</script>
+</body>
+</html>
